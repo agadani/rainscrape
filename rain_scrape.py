@@ -98,8 +98,9 @@ if __name__ == '__main__':
 
   rain_stats,temp_stats,rainfall_amounts = rain_stats((m,d),years=years)
   print
-  print "Based on the last",years,"years, there is a","%.2f"%(avg(rain_stats)*100),'% risk of rain or drizzle on',m,'-',d,'2015,\n and the average temperature will be',"%.2f"%avg(temp_stats),'F.'
-  print "If it does rain, expect","%.4f"%avg(rainfall_amounts),'inches of rain.'
+  print "Based on the last",years,"years, there is a","%.2f"%(avg(rain_stats)*100),'% historic probability of rain or drizzle on',m,'-',d,'\n and the average temperature will be',"%.2f"%avg(temp_stats),'F.'
+ 
+ print "If it does rain, expect","%.4f"%avg(rainfall_amounts),'inches of rain.'
 
 
       
